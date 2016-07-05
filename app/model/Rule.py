@@ -18,3 +18,4 @@ class Rule(Base):
     threshold = Column(Integer, nullable=False)
 
     users = relationship('Rule', secondary=association_table)
+    events = relationship('Event')
