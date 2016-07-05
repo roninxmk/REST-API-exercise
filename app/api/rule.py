@@ -18,8 +18,7 @@ def add_rule():
     # Check if rule exists
     if session.query(Rule).filter(Rule.parameter == parameter).first():
         payload['status'] = False
-        payload['message'] = 'parameter %s already exists. Edit the rule instead.' % (
-            parameter)
+        payload['message'] = 'parameter %s already exists. Edit the rule instead.' % (parameter)
         resp = jsonify(payload)
         resp.status_code = 403
         return resp
