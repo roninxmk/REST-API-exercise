@@ -24,6 +24,7 @@ def add_event():
         return resp
 
     try:
+        # Add event to database
         new_event = Event(value=value, rule=rule)
         session.add(new_event)
         session.commit()
