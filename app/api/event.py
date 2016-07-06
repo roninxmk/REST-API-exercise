@@ -14,8 +14,8 @@ def add_event():
 
     payload = {}
 
-    rule = session.query(Rule).filter(Rule.parameter == parameter).first()
     # Check if rule exists
+    rule = session.query(Rule).filter(Rule.parameter == parameter).first()
     if not rule:
         payload['status'] = False
         payload['message'] = 'parameter %s does not exist.' % (parameter)

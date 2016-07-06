@@ -113,5 +113,5 @@ def edit_parameter(parameter):
     payload['status'] = True
     payload['message'] = 'rule for %s with threshold %d edited successfuly.' % (parameter, threshold)
     resp = jsonify(payload)
-    resp.status_code = 201
+    resp.status_code = 200
     return resp
