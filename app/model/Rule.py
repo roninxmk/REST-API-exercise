@@ -17,5 +17,5 @@ class Rule(Base):
     parameter = Column(String(32), nullable=False)
     threshold = Column(Integer, nullable=False)
 
-    users = relationship('Rule', secondary=association_table)
-    events = relationship('Event')
+    user = relationship('User', secondary=association_table)
+    event = relationship('Event')
