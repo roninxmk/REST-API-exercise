@@ -47,7 +47,7 @@ Typical utilization flow for the REST API:
 ```
 * <b>Edit rule</b>
  
-Send a `PUT` request to the address `http://localhost:5000/api/v1/rules/<parameter>` following this example json data sctrucure:
+Send a `PUT` request to the address `http://localhost:5000/api/v1/rules/<parameter>` following this example json data sctrucure (in this case `<parameter` was replaced by `CO`):
 ```json
 {
     "parameter":"CO",
@@ -55,7 +55,6 @@ Send a `PUT` request to the address `http://localhost:5000/api/v1/rules/<paramet
     "usernames":["rvitorino", "fmonsanto"]
 }
 ```
-In this case `<parameter` whould be replaced by `CO`.
 
 * <b>Create event</b>
 
