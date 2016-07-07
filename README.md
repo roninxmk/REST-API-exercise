@@ -29,7 +29,7 @@ Typical utilization flow for the REST API:
 * `git clone https://github.com/andrefrmacedo/REST-API-exercise.git` 
 * `cd REST-API-exercise`
 * `pip install -r requirements.txt`
-* Create a MySQL database named `rest_exercise` with username `exercise` and password `Exercise123.`
+* Create a MySQL database named `rest_exercise` and grant permissions to the username `exercise` with password `Exercise123.`
  
 ## Running the API server
 * `python run.py` 
