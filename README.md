@@ -19,3 +19,77 @@ Typical utilization flow for the REST API:
 * Verify which alerts are registered for the user "fmonsanto".
 
 
+## Pre requisites
+* [Python](http://www.python.org/)
+* [Pip](https://pypi.python.org/pypi/pip)
+* [MySQL](http://www.mysql.com/)
+
+
+## Instalation
+* `git clone https://github.com/andrefrmacedo/REST-API-exercise.git` 
+* `cd REST-API-exercise`
+* `pip install -r requirements.txt`
+* Create a MySQL database named `rest_exercise` with username `exercise` and password `Exercise123.`
+ 
+## Running the API server
+* `python run.py` 
+
+## Available methods
+* <b>Create Rule</b>
+
+ Send a `POST` request to the address `http://localhost:5000/api/v1/rules` following this example json data sctrucure:
+```json
+{
+    "parameter":"CO",
+    "threshold": 25000,
+    "usernames":["rvitorino", "fmonsanto"]
+}
+```
+* <b>Edit rule</b>
+ 
+Send a `PUT` request to the address `http://localhost:5000/api/v1/rules/<parameter>` following this example json data sctrucure:
+```json
+{
+    "parameter":"CO",
+    "threshold": 20000,
+    "usernames":["rvitorino", "fmonsanto"]
+}
+```
+In this case `<parameter` whould be replaced by `CO`.
+
+* <b>Create event</b>
+
+ Send a `POST` request to the address `http://localhost:5000/api/v1/events` following this example json data sctrucure:
+```json
+{
+    "parameter":"CO",
+    "value": 30000
+}
+```
+
+* <b>Create user</b>
+
+Send a `POST` request to the address `http://localhost:5000/api/v1/users` following this example json data sctrucure:
+```json
+{
+    "username":"andre"
+}
+```
+
+* <b>Get user alerts</b>
+
+Send a `GET` request to the address `http://localhost:5000/api/v1/users/<username>`. Following the examples above and replacing `<username>` for `fmonsanto` the API would return something like this:
+```json
+{
+  "alerts": [
+    {
+      "parameter": "CO",
+      "threshold": 20000,
+      "timestamp": "Wed, 06 Jul 2016 00:15:32 GMT",
+      "value": 30000
+    }
+  ],
+  "message": "alerts for the user fmonsanto.",
+  "status": true
+}
+```
