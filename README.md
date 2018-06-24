@@ -31,7 +31,7 @@ Typical utilization flow for the REST API:
 * Create a MySQL database named `rest_exercise` and grant permissions to the username `exercise` with password `Exercise123.` You can register a free account at freemysqlhosting.net for a MySQL 5.5 Server. It is not working with MySQL 8.x.
  
 ## Running the API server
-* use CMDER for Windows to run `sh bootstrap.sh`. Check this source: https://auth0.com/blog/developing-restful-apis-with-python-and-flask/
+* use [CMDER](http://cmder.net/) for Windows to run `sh bootstrap.sh`. Check this [source](https://auth0.com/blog/developing-restful-apis-with-python-and-flask/) for more information about 'bootstrap.sh'.
 
 ## Available methods
 * <b>Create Rule</b>
