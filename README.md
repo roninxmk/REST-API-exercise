@@ -22,17 +22,16 @@ Typical utilization flow for the REST API:
 ## Pre requisites
 * [Python](http://www.python.org/)
 * [Pip](https://pypi.python.org/pypi/pip)
-* [MySQL](http://www.mysql.com/)
-
+* [MySQL](http://www.mysql.com/) 
 
 ## Instalation
-* `git clone https://github.com/andrefrmacedo/REST-API-exercise.git` 
+* `git clone https://github.com/andrefrmacedo/REST-API-exercise.git` or better fork from the original project.
 * `cd REST-API-exercise`
 * `pip install -r requirements.txt`
-* Create a MySQL database named `rest_exercise` and grant permissions to the username `exercise` with password `Exercise123.`
+* Create a MySQL database named `rest_exercise` and grant permissions to the username `exercise` with password `Exercise123.` You can register a free account at freemysqlhosting.net for a MySQL 5.5 Server. It is not working with MySQL 8.x.
  
 ## Running the API server
-* `python run.py` 
+* use CMDER for Windows to run `sh bootstrap.sh` 
 
 ## Available methods
 * <b>Create Rule</b>
