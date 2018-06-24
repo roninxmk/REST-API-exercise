@@ -20,9 +20,9 @@ Typical utilization flow for the REST API:
 
 
 ## Pre requisites
-* [Python](http://www.python.org/)
+* [Python 3.6](http://www.python.org/)
 * [Pip](https://pypi.python.org/pypi/pip)
-* [MySQL](http://www.mysql.com/) 
+* [MySQL 5.x](http://www.mysql.com/) 
 
 ## Instalation
 * `git clone https://github.com/andrefrmacedo/REST-API-exercise.git` or better fork from the original project.
