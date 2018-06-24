@@ -92,3 +92,8 @@ Send a `GET` request to the address `http://localhost:5000/api/v1/users/<usernam
   "status": true
 }
 ```
+
+# Executing the task
+
+In order to execute the assigned task, the student needs to `pip install requests`.
+
