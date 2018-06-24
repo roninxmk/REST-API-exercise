@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, TIMESTAMP
 from sqlalchemy.sql.schema import ForeignKey
 from sqlalchemy.orm import relationship
 from sqlalchemy import func
-from ..db import Base
+from app.db import Base
 
 
 

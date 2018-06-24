@@ -1,6 +1,6 @@
 from flask import Blueprint, request
-from ..model import User, Rule
-from ..db import session
+from app.model import User, Rule
+from app.db import session
 from flask import jsonify
 
 rule = Blueprint('rule_api', __name__, url_prefix="/api/v1")

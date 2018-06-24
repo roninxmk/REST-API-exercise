@@ -1,6 +1,6 @@
 from flask import Blueprint, request
-from ..model import Rule, Event
-from ..db import session
+from app.model import Rule, Event
+from app.db import session
 from flask import jsonify
 
 event = Blueprint('event_api', __name__, url_prefix="/api/v1")

@@ -1,7 +1,7 @@
 from sqlalchemy import Column, Integer, String, Table
 from sqlalchemy.sql.schema import ForeignKey
 from sqlalchemy.orm import relationship
-from ..db import Base
+from app.db import Base
 
 
 association_table = Table('user_alert', Base.metadata,

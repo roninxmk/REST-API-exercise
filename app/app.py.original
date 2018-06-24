@@ -1,13 +1,10 @@
 from flask import Flask
-from app.db import Base, engine
-from app.api import rule, event, user
+from webapp.db import Base, engine
+from webapp.api import rule, event, user
 
 
 app = Flask(__name__)
 
-# @app.route("/")
-#def hello_world():
-#    return "Hello, World!"
 
 # Create Blueprints
 app.register_blueprint(rule)
