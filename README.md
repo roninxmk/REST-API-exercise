@@ -32,6 +32,7 @@ Typical utilization flow for the REST API:
  
 ## Running the API server
 * use [CMDER](http://cmder.net/) for Windows to run `sh bootstrap.sh`. Check this [source](https://auth0.com/blog/developing-restful-apis-with-python-and-flask/) for more information about 'bootstrap.sh'.
+* If you are not using a virtualized environment, then you can comment the 'source' line from 'bootstrap.sh'.
 
 ## Available methods
 * <b>Create Rule</b>
